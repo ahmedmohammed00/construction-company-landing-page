@@ -1,0 +1,17 @@
+/* Arabic Fonts */
+@font-face {
+  font-family: 'Cairo';
+  src: url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Tajawal';
+  src: url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+  font-display: swap;
+}
+
+/* Fallback Arabic fonts */
+.font-arabic {
+  font-family: 'Cairo', 'Tajawal', 'Segoe UI', 'Tahoma', 'Arial', sans-serif;
+} 

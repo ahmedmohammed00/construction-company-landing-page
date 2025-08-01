@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>طلب استشارة جديد - Elite Touch</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .header p {
+            margin: 10px 0 0 0;
+            opacity: 0.9;
+            font-size: 16px;
+        }
+        .content {
+            padding: 30px;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #1f2937;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #fbbf24;
+        }
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .info-item {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #fbbf24;
+        }
+        .info-label {
+            font-weight: bold;
+            color: #374151;
+            font-size: 14px;
+            margin-bottom: 5px;
+        }
+        .info-value {
+            color: #1f2937;
+            font-size: 16px;
+        }
+        .project-details {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #fbbf24;
+        }
+        .project-details h3 {
+            margin: 0 0 15px 0;
+            color: #92400e;
+            font-size: 18px;
+        }
+        .message-content {
+            background: white;
+            padding: 15px;
+            border-radius: 6px;
+            border: 1px solid #e5e7eb;
+            white-space: pre-wrap;
+            line-height: 1.6;
+        }
+        .footer {
+            background: #f3f4f6;
+            padding: 20px 30px;
+            text-align: center;
+            color: #6b7280;
+            font-size: 14px;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .highlight {
+            background: linear-gradient(120deg, #fbbf24 0%, #f59e0b 100%);
+            color: white;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        @media (max-width: 600px) {
+            .info-grid {
+                grid-template-columns: 1fr;
+            }
+            .content {
+                padding: 20px;
+            }
+            .header {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="email-container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🎨 Elite Touch</h1>
+            <p>طلب استشارة جديد</p>
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <!-- Contact Information -->
+            <div class="section">
+                <div class="section-title">📞 معلومات التواصل</div>
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-label">الاسم الكامل</div>
+                        <div class="info-value">{{name}}</div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-label">رقم الهاتف</div>
+                        <div class="info-value">{{phone}}</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Details -->
+            <div class="section">
+                <div class="section-title">📋 تفاصيل المشروع</div>
+                <div class="project-details">
+                    <h3>🏗️ نوع المشروع</h3>
+                    <div class="message-content">
+                        <span class="highlight">{{projectType}}</span>
+                    </div>
+                    
+                    <h3 style="margin-top: 20px;">💬 الرسالة والمتطلبات</h3>
+                    <div class="message-content">{{details}}</div>
+                </div>
+            </div>
+
+            <!-- Summary -->
+            <div class="section">
+                <div class="section-title">📊 ملخص الطلب</div>
+                <div style="background: #ecfdf5; padding: 15px; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <p style="margin: 0; color: #065f46;">
+                        <strong>✅ تم استلام طلب استشارة جديد</strong><br>
+                        الاسم: <strong>{{name}}</strong><br>
+                        نوع المشروع: <strong>{{projectType}}</strong><br>
+                        تاريخ الطلب: <strong>{{date}}</strong>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <div class="logo">Elite Touch</div>
+            <p>خدمات التشطيبات والديكورات المتميزة</p>
+            <p style="margin: 10px 0 0 0; font-size: 12px; opacity: 0.7;">
+                هذا البريد تم إرساله تلقائياً من نموذج التواصل في الموقع
+            </p>
+        </div>
+    </div>
+</body>
+</html> 
