@@ -89,7 +89,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">الهاتف</p>
-                  <p className="text-gray-600">+20 123 456 7890</p>
+                  <p className="text-gray-600">+01225553137</p>
                 </div>
               </div>
 
@@ -99,7 +99,6 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">البريد الإلكتروني</p>
-                  <p className="text-gray-600">info@elitefinish.com</p>
                 </div>
               </div>
 
@@ -109,7 +108,6 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <p className="font-bold text-gray-900">العنوان</p>
-                  <p className="text-gray-600">القاهرة الجديدة، مصر</p>
                 </div>
               </div>
             </div>
