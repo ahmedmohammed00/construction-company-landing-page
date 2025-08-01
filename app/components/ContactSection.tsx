@@ -82,35 +82,7 @@ export default function ContactSection() {
               احصل على استشارة مجانية وعرض سعر مخصص لمشروعك. فريقنا جاهز لتحويل أحلامك إلى واقع.
             </p>
 
-            <div className="space-y-6">
-              <div className="flex items-center space-x-reverse space-x-4">
-                <div className="w-14 h-14 bg-gradient-to-r from-yellow-400 to-yellow-600 rounded-2xl flex items-center justify-center">
-                  <i className="fas fa-phone text-white text-lg"></i>
-                </div>
-                <div>
-                  <p className="font-bold text-gray-900">الهاتف</p>
-                  <p className="text-gray-600">+01225553137</p>
-                </div>
-              </div>
 
-              <div className="flex items-center space-x-reverse space-x-4">
-                <div className="w-14 h-14 bg-gradient-to-r from-blue-400 to-blue-600 rounded-2xl flex items-center justify-center">
-                  <i className="fas fa-envelope text-white text-lg"></i>
-                </div>
-                <div>
-                  <p className="font-bold text-gray-900">البريد الإلكتروني</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-reverse space-x-4">
-                <div className="w-14 h-14 bg-gradient-to-r from-green-400 to-green-600 rounded-2xl flex items-center justify-center">
-                  <i className="fas fa-map-marker-alt text-white text-lg"></i>
-                </div>
-                <div>
-                  <p className="font-bold text-gray-900">العنوان</p>
-                </div>
-              </div>
-            </div>
           </div>
 
           <div className="bg-gray-50 rounded-3xl p-8">
